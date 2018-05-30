@@ -18,7 +18,7 @@ var wasimExpress =        require("express"),
 
 // mongoose.connect("mongodb://localhost/campground");
 
-mongoose.connect("mongodb://wasim:ellmech@123@ds139970.mlab.com:39970/wasim");
+mongoose.connect("mongodb://yelp:wasim123@ds139970.mlab.com:39970/wasim");
 
 
 var db = mongoose.connection;
