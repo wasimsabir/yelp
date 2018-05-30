@@ -16,9 +16,9 @@ var wasimExpress =        require("express"),
   seedDb =                require("./seed");
   
 
-// mongoose.connect("mongodb://localhost/campground");
+mongoose.connect(process.env.DATABASEURL);
 
-mongoose.connect("mongodb://yelp:wasim123@ds139970.mlab.com:39970/wasim");
+// mongoose.connect("mongodb://yelp:wasim123@ds139970.mlab.com:39970/wasim");
 
 
 var db = mongoose.connection;
