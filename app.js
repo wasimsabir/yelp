@@ -15,11 +15,7 @@ var wasimExpress =        require("express"),
   indexRoute =            require("./routes/index"),
   seedDb =                require("./seed");
   
-
 mongoose.connect(process.env.DATABASEURL);
-
-// mongoose.connect("mongodb://yelp:wasim123@ds139970.mlab.com:39970/wasim");
-
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
