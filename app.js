@@ -16,7 +16,11 @@ var wasimExpress =        require("express"),
   seedDb =                require("./seed");
   
 
-mongoose.connect("mongodb://localhost/campground");
+// mongoose.connect("mongodb://localhost/campground");
+
+mongoose.connect("mongodb://wasimyelp:ellmech@123@ds139920.mlab.com:39920/wasimsabiryelpcamp");
+
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
