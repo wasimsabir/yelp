@@ -67,9 +67,9 @@ db.once('open', function () {
   me.loo();
   me.soo();
 
-
-  app.listen(3000, function () {
-    console.log("The Yelp Camp Server Has started!", __dirname);
+ const PORT = process.env.PORT || 3000;
+  app.listen(PORT, function () {
+    console.log("The Yelp Camp Server Has started!");
   });
 
 });
