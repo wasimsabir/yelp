@@ -1,0 +1,54 @@
+body{
+  font-family: 'Lato', sans-serif;
+
+}
+h1 {
+  color: pink;
+}
+.nav-link {
+  color: #fff !important;
+}
+.flx {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.f {
+  width: 30%;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+div.commentContainer{
+  background-color: #474787;
+}
+div.commentContainer p {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 390px) {
+  h4.rset {
+    float: none;
+    text-align: center;
+  }
+  .rset{
+    color: red;
+    float: left !important;
+  }
+}
+div.separator {
+  height: 1px;
+  background-color: #182C61;
+}
+
+div.danger {
+  background-color:#fab1a0;
+}
+
+div.success {
+  background-color: #2ed573;
+}

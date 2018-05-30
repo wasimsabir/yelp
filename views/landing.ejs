@@ -1,0 +1,14 @@
+<% include partials/header %>
+<div class="container">
+<h1>Welcome to Yelpcamp %></h1>
+<a href="/campgrounds" class="btn btn-primary">View Campgrounds</a>
+<p>
+  <% for(var i = 0; i < 10; i++){
+    for(var j = 0; j <= i; j++){ %>
+      <%= "*" %>
+    <% } %>
+   <br>
+  <% } %>
+</p>
+</div>
+<% include partials/footer %>

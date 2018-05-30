@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+  <h1 class="mx-auto w-50 h2 my-5">Edit <span class="text-muted ml-4"><%= comment.text; %></span></h1>
+<form action="/campgrounds/<%= campgroundId; %>/comments/<%= comment._id; %>?_method=PUT" class="w-50 mx-auto" method="POST">
+  <div class="form-group">
+    <label for="text">Comment</label>
+    <input type="text" class="form-control w-75" id="text" value="<%= comment.text; %>" name="comment[text]">
+  </div>
+  <button type="submit" class="btn btn-info">Submit</button>
+</form>
+</div>
+
+
+
+
+
+<% include ../partials/footer %>
